@@ -5,6 +5,11 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata:{
+    title: 'Merseyside Dementia Friendly Radio',
+    author: 'Matt Wilkie'
+  } ,
+  plugins: [
+    'gatsy-plugin-sass'
+  ]
 }
