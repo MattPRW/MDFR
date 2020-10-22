@@ -10,6 +10,6 @@ module.exports = {
     author: 'Matt Wilkie'
   } ,
   plugins: [
-    'gatsy-plugin-sass'
+    'gatsby-plugin-sass'
   ]
 }
