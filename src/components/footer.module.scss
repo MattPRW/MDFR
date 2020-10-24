@@ -1,4 +1,11 @@
 .footerContainer{
   border-style: solid;
   border-color: red;
+  width: 1005;
+  flex: end;
+
+  div > div.radioco_artwork{
+    max-width: 100px;
+    max-height: 100px;
+  }
 }
