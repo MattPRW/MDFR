@@ -1,5 +1,9 @@
 import React from 'react'
 import ReactHowler from 'react-howler'
+import ScriptTag from 'react-script-tag';
+
+
+import PlayerStyles from "./player.module.scss"
 
 class Player extends React.Component {
   constructor (props) {
@@ -23,7 +27,7 @@ class Player extends React.Component {
 
   render () {
     return (
-      <div>    
+      <div className={PlayerStyles.container}>    
         <ReactHowler
           src='https://s2.radio.co/s9e2b0d28b/listen'
           playing={this.state.playing}
@@ -31,7 +35,15 @@ class Player extends React.Component {
           preload= {true}
           html5= {true}
         />
-        {console.log(this.player.howlerState())}
+        <ScriptTag src="https://embed.radio.co/embed/s9e2b0d28b/artwork.js"/>
+        <div className={PlayerStyles.playing}>
+          <div className={PlayerStyles.trackInfo}>
+            <p>Now Playing:   </p> <ScriptTag src="https://embed.radio.co/embed/s9e2b0d28b/song.js"/>
+          </div>
+          <div className={PlayerStyles.trackInfo}>
+            <p>Next Up:   </p> <ScriptTag src="https://embed.radio.co/embed/s9e2b0d28b/next.js"/>
+          </div>
+        </div>
         <button onClick={this.handlePlay}>
           {this.state.playing ? 'Stop' : 'Play'}
         </button>

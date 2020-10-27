@@ -10,6 +10,14 @@ module.exports = {
     author: 'Matt Wilkie'
   } ,
   plugins: [
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Josefin Sans', 'Droid Serif']
+        }
+      }
+    }
   ]
 }

@@ -1,18 +1,25 @@
-img{
-  max-width: 200px;
-  max-height: 200px;
-}
-
-
-
 .container{
   display: flex;
-  flex-direction: row;
+  flex-direction :row-reverse;
+  height:15vh;
+  background: #ACC89F;
+  flex-grow: 1;
 
-  .rhap_container{
-    max-height: 119px;
-    padding: 0;
+  img{
+    height: 15vh;
   }
+}
+
+.playing{
+  display: flex;
+  flex-direction :column;
+  flex-grow: 1;
+}
+
+.trackInfo{
+  display: flex;
+  flex-direction :row;
+  font-family: Josefin Sans;
 }
 
 
