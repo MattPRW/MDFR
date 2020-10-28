@@ -1,25 +1,37 @@
 .container{
   display: flex;
   flex-direction :row-reverse;
-  height:15vh;
-  background: #ACC89F;
+  height:21vh;
+  max-width: 1068px;
+  background: #d8d8d8;
   flex-grow: 1;
+  padding: 20px;
 
   img{
-    height: 15vh;
+    height: 16vh;
+    min-width: 16vh;
   }
 }
 
 .playing{
   display: flex;
   flex-direction :column;
+  justify-content: space-evenly;
+  left: 200px;
   flex-grow: 1;
 }
 
 .trackInfo{
-  display: flex;
-  flex-direction :row;
+  // display: inline-block;
+  flex-direction :column;
   font-family: Josefin Sans;
+  padding:5px;
+  
+  p{
+    font-size: 1.2rem;;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
 }
 
 

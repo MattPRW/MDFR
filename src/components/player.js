@@ -10,8 +10,7 @@ class Player extends React.Component {
     super(props)
 
     this.state = {
-      playing: false,
-      message: 'Play'
+      playing: false
     }
     this.handlePlay = this.handlePlay.bind(this)
   }
@@ -38,10 +37,11 @@ class Player extends React.Component {
         <ScriptTag src="https://embed.radio.co/embed/s9e2b0d28b/artwork.js"/>
         <div className={PlayerStyles.playing}>
           <div className={PlayerStyles.trackInfo}>
-            <p>Now Playing:   </p> <ScriptTag src="https://embed.radio.co/embed/s9e2b0d28b/song.js"/>
+            <p>Now Playing:</p> <ScriptTag src="https://embed.radio.co/embed/s9e2b0d28b/song.js"/>
           </div>
+          
           <div className={PlayerStyles.trackInfo}>
-            <p>Next Up:   </p> <ScriptTag src="https://embed.radio.co/embed/s9e2b0d28b/next.js"/>
+            <p>Next Up:</p> <ScriptTag src="https://embed.radio.co/embed/s9e2b0d28b/next.js"/>
           </div>
         </div>
         <button onClick={this.handlePlay}>

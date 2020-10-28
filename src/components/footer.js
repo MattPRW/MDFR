@@ -6,6 +6,7 @@ const Footer = () => {
   return (
     <div className={footerStyles.footerContainer}>
       <Player />
+      <small>© Merseyside Dementia Friendly Radio 2020 </small>
     </div>
   )
 }
