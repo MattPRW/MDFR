@@ -1,5 +1,6 @@
 import React from "react"
 import Player from "./player"
+import Grid from '@material-ui/core/Grid'
 import footerStyles from "./footer.module.scss"
 
 const Footer = () => {
